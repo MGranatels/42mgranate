@@ -6,7 +6,7 @@
 /*   By: mgranate <mgranate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 15:50:31 by mgranate          #+#    #+#             */
-/*   Updated: 2022/02/23 16:11:38 by mgranate         ###   ########.fr       */
+/*   Updated: 2022/02/27 16:37:34 by mgranate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(nb / 10, fd);
 		ft_putnbr_fd(nb % 10, fd);
 	}
-	else 
+	else
 	{
 		c = nb + '0';
 		write (fd, &c, 1);

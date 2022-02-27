@@ -6,7 +6,7 @@
 /*   By: mgranate <mgranate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 10:04:54 by mgranate          #+#    #+#             */
-/*   Updated: 2022/02/18 16:29:01 by mgranate         ###   ########.fr       */
+/*   Updated: 2022/02/27 16:40:18 by mgranate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	char *h;
-	char *n;
-	size_t i;
-	size_t j;
-	size_t size;
-	
+	char	*h;
+	char	*n;
+	size_t	i;
+	size_t	j;
+	size_t	size;
+
 	i = 0;
 	size = ft_strlen(needle);
 	h = (char *) haystack;
@@ -40,4 +40,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-	

@@ -6,7 +6,7 @@
 /*   By: mgranate <mgranate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 13:25:28 by mgranate          #+#    #+#             */
-/*   Updated: 2022/02/23 17:07:17 by mgranate         ###   ########.fr       */
+/*   Updated: 2022/02/27 16:37:19 by mgranate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char	*dst1;
 	unsigned char	*src1;
-	
+
 	if (dst == NULL && src == NULL)
 		return (NULL);
 	dst1 = dst;

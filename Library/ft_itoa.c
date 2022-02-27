@@ -6,7 +6,7 @@
 /*   By: mgranate <mgranate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 17:06:59 by mgranate          #+#    #+#             */
-/*   Updated: 2022/02/25 19:51:45 by mgranate         ###   ########.fr       */
+/*   Updated: 2022/02/27 16:22:43 by mgranate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ char	*ft_itoa(int n)
 	char	*trn;
 	int		len;
 	int		i;
-	int		neg;
+	int		nb;
 
-	neg = n;
+	nb = n;
 	trn = 0;
 	len = ft_int_lenght(n) + 1 + (n < 0);
 	trn = (char *)malloc(sizeof(char) * (len));
@@ -35,13 +35,13 @@ char	*ft_itoa(int n)
 		return (NULL);
 	trn[len - 1] = '\0';
 	i = len -2;
-	while (i > -1)
+	while (i >= 0)
 	{
 		trn[i] = (n % 10) * ((n > 0) - (n < 0)) + '0';
 		n /= 10;
 		i--;
 	}
-	if (neg < 0)
+	if (nb < 0)
 		trn[0] = '-';
 	return (trn);
 }
