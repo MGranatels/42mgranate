@@ -22,8 +22,8 @@ RM			= @rm -f
 
 CFLAGS		= -Wall -Werror -Wextra -I.
 
-.c.o:
-				$(CC) -c $(CFLAGS) $< -o $(<:.c=.o)
+.c.o:		$(OBJS) $(BONOS_OBJS)
+				$(CC) -c $(CFLAGS) $< -o $(<:.c=.o) 
 
 all:		$(NAME)
 
@@ -41,4 +41,4 @@ re: 		fclean all
 bonus:		$(OBJS) $(BONUS_OBJS)
 			ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
-.PHONY: 	all clean fclean re bonus
+.PHONY: 	all clean fclean re bonus .c.o

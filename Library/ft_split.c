@@ -6,12 +6,11 @@
 /*   By: mgranate <mgranate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 14:50:14 by mgranate          #+#    #+#             */
-/*   Updated: 2022/02/27 15:57:58 by mgranate         ###   ########.fr       */
+/*   Updated: 2022/02/28 14:51:25 by mgranate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 static size_t	ft_countword(char const *s, char c)
 {

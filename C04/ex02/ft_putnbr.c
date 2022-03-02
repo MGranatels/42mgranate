@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mgranate <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mgranate <mgranate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 13:45:11 by mgranate          #+#    #+#             */
-/*   Updated: 2022/02/23 16:57:02 by mgranate         ###   ########.fr       */
+/*   Updated: 2022/02/27 17:30:15 by mgranate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
 #include <unistd.h>
 
 void	ft_putnbr(int nb)
 {
 	char	c;
-	long n;
+	long	n;
 
 	n = nb;
 	if (n < 0)
@@ -33,9 +33,4 @@ void	ft_putnbr(int nb)
 		c = n + '0';
 		write(1, &c, 1);
 	}
-}
-
-int main ()
-{
-	ft_putnbr(-2147483648);
 }

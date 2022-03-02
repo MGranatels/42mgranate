@@ -6,12 +6,11 @@
 /*   By: mgranate <mgranate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 14:28:00 by mgranate          #+#    #+#             */
-/*   Updated: 2022/02/27 16:37:12 by mgranate         ###   ########.fr       */
+/*   Updated: 2022/02/28 14:50:58 by mgranate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 int	ft_lstsize(t_list *lst)
 {
