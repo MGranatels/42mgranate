@@ -68,17 +68,13 @@ void	count_character_rotation(char *str)
 	c = 0;
 	count = 0;
 	count1 = 0;
-
-	while(str[c] != '\0')
+	while (str[c] != '\0')
 	{
-
 		if (c == 0 || c % 16 == 0)
 			first_char_adress(str);
-
 		if (c % 2 == 0 && c != 0)
 		{
 			write(1, " ", 1);
-
 		}
 		aux = str[c];
 		ft_putchar("0123456789abcdef"[aux / 16]);
