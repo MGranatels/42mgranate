@@ -6,20 +6,21 @@
 /*   By: mgranate <mgranate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 13:27:06 by mgranate          #+#    #+#             */
-/*   Updated: 2022/03/02 18:52:42 by mgranate         ###   ########.fr       */
+/*   Updated: 2022/03/03 20:24:18 by mgranate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <stdio.h>
 
-int	ft_print_format(const char *format, va_list *args, int	i)
+int	ft_print_format(const char *format, va_list *args, int i)
 {
 	int	count;
 
 	count = 0;
 	if (format[i] == 'c')
 		count += ft_putchar(va_arg(*args, int));
-	else if (format[i] == 's') 	
+	else if (format[i] == 's')
 		count += ft_putstr(va_arg(*args, char *));
 	else if (format[i] == 'i' || format[i] == 'd')
 		count += ft_putnbr(va_arg(*args, int));
@@ -30,8 +31,8 @@ int	ft_print_format(const char *format, va_list *args, int	i)
 	else if (format[i] == 'p')
 	{
 		write (1, "0x", 2);
-		count += ft_putnb_adress(va_arg(*args, unsigned long long));
-		count += 2;	
+		count += ft_putnb_adress(va_arg(*args, unsigned long int));
+		count += 2;
 	}
 	else if (format[i] == 'u')
 		count += ft_printf_extra(va_arg(*args, unsigned int));

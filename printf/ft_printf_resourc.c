@@ -6,7 +6,7 @@
 /*   By: mgranate <mgranate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 13:49:44 by mgranate          #+#    #+#             */
-/*   Updated: 2022/03/02 18:52:15 by mgranate         ###   ########.fr       */
+/*   Updated: 2022/03/03 20:24:34 by mgranate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ int	ft_putnb_base(unsigned int n, char x)
 	else
 	{
 		if (n < 10)
-			count += ft_putchar("0123456789ABCDEF"[n]);
+			count += ft_putchar(n + '0');
 		else
 		{
 			if (x == 'X')
